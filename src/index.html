@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <title>Contact Form using JavaScript</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+    <button id="visualizeForm">Создать заметку</button>
+    <div class="create_dialog">
+        <form class="form_sample" method="POST">
+                <p>Название:
+                    <input id="inputLabel" required>
+                </p>
+                <p>Дата окончания: <input id="calendar1" type="date" name="calendar" required></p>
+                <p style="font-size:10px">Введено <span class="charCounter"></span></p>
+                <div>
+                    <button type="submit" id="submitButton">Ok</button>
+                    <button type="button" class="to-do-priority is-important">Важная задача</button>
+            </div>
+        </form>
+    </div>
+    <script src="app2.js"></script>
+</body>
+
+</html>

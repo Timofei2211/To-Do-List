@@ -1,0 +1,51 @@
+
+.create_dialog {
+    display: none;
+    justify-content: center;
+    width:500px;
+    height: 180px;
+    margin:0 auto;
+    font-family:'Ubuntu',sans-serif
+    }
+#visualizeForm{
+    position: fixed;
+}
+.show{
+    display: block;
+    }
+.form_sample{
+    display: block;
+    text-align:center;
+    border:1px solid #ccc;
+    width:300px;
+    padding:0 50px 15px;
+    margin:0 auto;
+    box-shadow:0 0 15px;
+    border-radius:6px;
+    }
+div#buttons{
+    display: flex;
+    justify-content: space-around;
+}
+ul{
+    display: flex;
+}
+li{
+    background: #f7f7f7;
+    height: 50px;
+    line-height: 50px;
+    cursor: pointer;
+    font-size: 20px;
+}
+.textAreas{
+    width: 400px;
+    height: 40px;
+}
+.is-important{
+    background-color: red;
+    opacity: 90%;
+}
+.validation-input-label{
+    color: red;
+    border-color: red;
+}

@@ -1,5 +1,11 @@
 
-.create_dialog {
+html {
+    scroll-behavior: smooth;
+  }  
+body{
+    height: 2000px;
+}
+.create-dialog {
     display: none;
     justify-content: center;
     width:500px;
@@ -13,7 +19,7 @@
 .show{
     display: block;
     }
-.form_sample{
+.form-sample{
     display: block;
     text-align:center;
     border:1px solid #ccc;
@@ -48,4 +54,24 @@ li{
 .validation-input-label{
     color: red;
     border-color: red;
+}
+.up-button {
+    position: fixed;
+    z-index: 1;
+    padding: 0;
+    bottom: 75px;
+    right: 20px;
+    width: 64px;
+    height: 64px;
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    vertical-align: middle;
+    border: 5px solid;
+    border-radius: 50%;
+    display: none;
+    cursor: pointer;
+  }
+.shown{
+    display: inline-block;
 }

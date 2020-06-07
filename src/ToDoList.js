@@ -1,9 +1,10 @@
-let form = document.querySelector('.create_dialog');
+let form = document.querySelector('.create-dialog');
 let priority = document.querySelector('.to-do-priority');
 let inputLabel = document.getElementById("inputLabel");       //Поле ввода текста задачи
 let createNoteButton = document.getElementById("submitButton");
 let charCounterInputLabel = document.querySelector('.charCounter');
-const buttonOpenForm = document.getElementById('visualizeForm');
+let buttonOpenForm = document.getElementById('visualizeForm');
+let upButton = document.querySelector('.up-button')
 buttonOpenForm.onclick = function () {
     form.classList.add('show');
 }
@@ -49,4 +50,15 @@ form.onsubmit = function (evt) {
     charCounterInputLabel.textContent=0;
     form.appendChild(task);
     task.appendChild(textInTask);
+}
+
+window.onscroll = function(){
+   if(window.pageYOffset>200){
+    upButton.classList.add('shown');
+   } else{
+       upButton.classList.remove('shown');
+   }
+}
+upButton.onclick = function(){
+  window.scrollTo(0,0);
 }
